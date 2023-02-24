@@ -1,0 +1,9 @@
+.card {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.colorbtn {
+    left: 50%;
+    transform: translateX(-50%);
+}
