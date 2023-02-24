@@ -7,3 +7,9 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.rating {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
