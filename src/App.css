@@ -6,6 +6,7 @@
 .colorbtn {
     left: 50%;
     transform: translateX(-50%);
+    background-color: #8A307F !important;
 }
 
 .rating {
@@ -13,3 +14,18 @@
     margin-bottom: 10px !important;
 }
 
+.reviews {
+    padding-top: 25px !important;
+    padding-right: 30px !important;
+}
+
+.reviewCard {
+    /*background-color: #1E2761  !important;*/
+    background-color:   #8A307F !important;
+}
+
+header {
+    background-color:  black !important;
+    /*border-bottom: aliceblue;*/
+    /*color: black !important;*/
+}

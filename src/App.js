@@ -29,9 +29,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea, CardActions } from '@mui/material';
-import anagha from './asset/a.jpg'
+import anagha from './asset/a.jpg';
+import Anagha from './asset/anagha.jpg';
 import {purple} from "@mui/material/colors";
 import StarIcon from '@mui/icons-material/Star';
+import Grid from '@mui/material/Grid';
 
 const darkTheme = createTheme({
   palette: {
@@ -101,6 +103,7 @@ function ButtonAppBar() {
             </Snackbar>
           </Toolbar>
         </AppBar>
+        <Divider />
       </Box>
   );
 }
@@ -293,13 +296,128 @@ function MultiActionAreaCard() {
   );
 }
 
+function card(a,b) {
+  return (<React.Fragment>
+    <CardActionArea className="reviewCard">
+      <CardContent>
+        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        {/*<Typography variant="h5" component="div">*/}
+        {/*  benevolent*/}
+        {/*</Typography>*/}
+        <Rating name="read-only" value="1" readOnly />
+        <br/>
+        <Typography variant="body2">
+          well meaning and kindly.sadvffffffffffffffffffffffffffffffffffffffffffffffffff
+          awegwerhgywertgqerfg srfgwertgeqrf tghwrtg wergetg rgertg egerg
+        </Typography>
+      </CardContent>
+    </CardActionArea>
+  </React.Fragment>);
+}
 
 function App() {
   return (
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <ButtonAppBar></ButtonAppBar>
-        <MultiActionAreaCard></MultiActionAreaCard>
+        <Grid container spacing={2}>
+          <Grid item xs={3}>
+            <Box sx={{ flexGrow: 1 }}>
+              <MultiActionAreaCard></MultiActionAreaCard>
+            </Box>
+          </Grid>
+          <Grid item xs={9} className="reviews">
+            <Typography variant="h5" gutterBottom>
+              Reviews >
+            </Typography>
+            <Box sx={{ flexGrow: 1 }}>
+              <Grid container spacing={2}>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box sx={{ minWidth: 275 }}>
+                    <Card variant="outlined">{card("a","b")}</Card>
+                  </Box>
+                </Grid>
+              </Grid>
+            </Box>
+          </Grid>
+        </Grid>
       </ThemeProvider>
   );
 }
