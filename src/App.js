@@ -301,21 +301,22 @@ function card(a,b) {
     <CardActionArea className="reviewCard">
       <CardContent>
         <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
-          Word of the Day
+          {a}
         </Typography>
-        {/*<Typography variant="h5" component="div">*/}
-        {/*  benevolent*/}
-        {/*</Typography>*/}
         <Rating name="read-only" value="1" readOnly />
         <br/>
         <Typography variant="body2">
-          well meaning and kindly.sadvffffffffffffffffffffffffffffffffffffffffffffffffff
-          awegwerhgywertgqerfg srfgwertgeqrf tghwrtg wergetg rgertg egerg
+          {b}
         </Typography>
       </CardContent>
     </CardActionArea>
   </React.Fragment>);
 }
+
+const reviews = [
+    "Hello",
+    "World"
+]
 
 function App() {
   return (
@@ -336,7 +337,7 @@ function App() {
               <Grid container spacing={2}>
                 <Grid item xs={3}>
                   <Box sx={{ minWidth: 275 }}>
-                    <Card variant="outlined">{card("a","b")}</Card>
+                    <Card variant="outlined">{card(reviews[0],reviews[1])}</Card>
                   </Box>
                 </Grid>
                 <Grid item xs={3}>
